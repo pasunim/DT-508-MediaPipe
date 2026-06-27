@@ -6,7 +6,7 @@ from mediapipe.tasks.python import vision
 base_options = python.BaseOptions(model_asset_path="blaze_face_short_range.tflite")
 options = vision.FaceDetectorOptions(
     base_options=base_options,
-    min_detection_confidence=0.5,
+    min_detection_confidence=0.8,
 )
 
 cap = cv2.VideoCapture(0)
